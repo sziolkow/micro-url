@@ -37,7 +37,11 @@
 ## Configured for Postgres Database
 
 - Start Postgres in Docker
+```
 docker run --rm --name postgres -e POSTGRES\_HOST\_AUTH\_METHOD=trust -d -p 5432:5432 -v my\_dbdata:/vapostgresql/data postgres  
+```
 
 - Connect with the local instance und create the database
+```
 psql -h localhost -U postgres -d postgres
+```
