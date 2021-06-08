@@ -8,6 +8,8 @@ micronaut:
         descriptions: true
         step: PT1M
     enabled: true
+  server:
+    port: 8070
 datasources:
   default:
     url: jdbc:postgresql://localhost:5432/micro-url
